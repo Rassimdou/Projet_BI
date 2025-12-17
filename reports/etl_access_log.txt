@@ -1,0 +1,27 @@
+2025-12-17 21:57:49,214 - ERROR - ❌ Erreur de connexion Access: ('IM002', '[IM002] [Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified (0) (SQLDriverConnect)')
+2025-12-17 21:57:49,216 - INFO - 💡 Assurez-vous que:
+2025-12-17 21:57:49,216 - INFO -    1. Le driver Microsoft Access est installé
+2025-12-17 21:57:49,217 - INFO -    2. Le chemin du fichier est correct dans config.py
+2025-12-17 21:57:49,218 - INFO -    3. Le fichier n'est pas ouvert dans Access
+2025-12-17 22:12:42,129 - INFO - ✅ Connexion à Access établie: D:\Projet_Bi\data\Northwind 2012.accdb
+2025-12-17 22:12:42,129 - INFO - ==================================================
+2025-12-17 22:12:42,129 - INFO - DÉBUT DE L'EXTRACTION (ACCESS)
+2025-12-17 22:12:42,130 - INFO - ==================================================
+2025-12-17 22:12:42,132 - INFO - 📋 Tables trouvées: Customers, Employee Privileges, Employees, Inventory Transaction Types, Inventory Transactions, Invoices, Order Details, Order Details Status, Orders, Orders Status, Orders Tax Status, Privileges, Products, Purchase Order Details, Purchase Order Status, Purchase Orders, Sales Reports, Shippers, Strings, Suppliers
+2025-12-17 22:12:42,132 - WARNING - ⚠️ Table 'Categories' non trouvée dans la base Access
+2025-12-17 22:12:42,183 - INFO - ✅ Table 'Customers' extraite: 29 lignes
+2025-12-17 22:12:42,188 - INFO - ✅ Table 'Employees' extraite: 9 lignes
+2025-12-17 22:12:42,193 - INFO - ✅ Table 'Orders' extraite: 48 lignes
+2025-12-17 22:12:42,195 - INFO - ✅ Table 'Order Details' extraite: 58 lignes
+2025-12-17 22:12:42,209 - INFO - ✅ Table 'Products' extraite: 45 lignes
+2025-12-17 22:12:42,213 - INFO - ✅ Table 'Shippers' extraite: 3 lignes
+2025-12-17 22:12:42,219 - INFO - ✅ Table 'Suppliers' extraite: 10 lignes
+2025-12-17 22:12:42,220 - WARNING - ⚠️ Table 'Region' non trouvée dans la base Access
+2025-12-17 22:12:42,220 - WARNING - ⚠️ Table 'Territories' non trouvée dans la base Access
+2025-12-17 22:12:42,220 - INFO - ✅ Extraction terminée: 7 tables
+2025-12-17 22:12:42,220 - INFO - ==================================================
+2025-12-17 22:12:42,221 - INFO - DÉBUT DES TRANSFORMATIONS
+2025-12-17 22:12:42,221 - INFO - ==================================================
+2025-12-17 22:12:42,221 - INFO - Création de Fact_Sales...
+2025-12-17 22:12:42,235 - ERROR - ❌ Erreur ETL: 'OrderID'
+2025-12-17 22:12:42,283 - INFO - ✅ Connexion Access fermée

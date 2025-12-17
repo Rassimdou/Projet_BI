@@ -1,0 +1,675 @@
+2025-12-08 00:11:29,417 - INFO - ✅ Connexion à SQL Server établie avec succès
+2025-12-08 00:11:29,417 - INFO - ==================================================
+2025-12-08 00:11:29,417 - INFO - DÉBUT DE L'EXTRACTION
+2025-12-08 00:11:29,418 - INFO - ==================================================
+2025-12-08 00:11:29,546 - INFO - ✅ Table '[Categories]' extraite: 8 lignes
+2025-12-08 00:11:29,552 - INFO - ✅ Table '[Customers]' extraite: 91 lignes
+2025-12-08 00:11:29,570 - INFO - ✅ Table '[Employees]' extraite: 9 lignes
+2025-12-08 00:11:29,584 - INFO - ✅ Table '[Orders]' extraite: 830 lignes
+2025-12-08 00:11:29,600 - INFO - ✅ Table '[Order Details]' extraite: 2155 lignes
+2025-12-08 00:11:29,608 - INFO - ✅ Table '[Products]' extraite: 77 lignes
+2025-12-08 00:11:29,613 - INFO - ✅ Table '[Shippers]' extraite: 3 lignes
+2025-12-08 00:11:29,618 - INFO - ✅ Table '[Suppliers]' extraite: 29 lignes
+2025-12-08 00:11:29,624 - INFO - ✅ Table '[Region]' extraite: 4 lignes
+2025-12-08 00:11:29,630 - INFO - ✅ Table '[Territories]' extraite: 53 lignes
+2025-12-08 00:11:29,630 - INFO - ✅ Extraction terminée: 10 tables
+2025-12-08 00:11:29,631 - INFO - ==================================================
+2025-12-08 00:11:29,631 - INFO - DÉBUT DES TRANSFORMATIONS
+2025-12-08 00:11:29,631 - INFO - ==================================================
+2025-12-08 00:11:29,631 - INFO - Création de Fact_Sales...
+2025-12-08 00:11:29,664 - INFO - ✅ Fact_Sales créée: 2155 lignes
+2025-12-08 00:11:29,664 - INFO - Création de Dim_Customers...
+2025-12-08 00:11:29,666 - INFO - ✅ Dim_Customers créée: 91 lignes
+2025-12-08 00:11:29,666 - INFO - Création de Dim_Products...
+2025-12-08 00:11:29,675 - INFO - ✅ Dim_Products créée: 77 lignes
+2025-12-08 00:11:29,675 - INFO - Création de Dim_Employees...
+2025-12-08 00:11:29,682 - INFO - ✅ Dim_Employees créée: 9 lignes
+2025-12-08 00:11:29,682 - INFO - Création de Dim_Time...
+2025-12-08 00:11:29,686 - INFO - ✅ Dim_Time créée: 480 lignes
+2025-12-08 00:11:29,687 - INFO - Création des résumés de ventes...
+2025-12-08 00:11:29,711 - INFO - ✅ Résumés de ventes créés
+2025-12-08 00:11:29,712 - INFO - ✅ Transformations terminées
+2025-12-08 00:11:29,713 - INFO - ==================================================
+2025-12-08 00:11:29,713 - INFO - DÉBUT DU CHARGEMENT
+2025-12-08 00:11:29,713 - INFO - ==================================================
+2025-12-08 00:11:29,723 - INFO - ✅ Categories.csv sauvegardé (8 lignes)
+2025-12-08 00:11:29,724 - INFO - ✅ Customers.csv sauvegardé (91 lignes)
+2025-12-08 00:11:29,739 - INFO - ✅ Employees.csv sauvegardé (9 lignes)
+2025-12-08 00:11:29,746 - INFO - ✅ Orders.csv sauvegardé (830 lignes)
+2025-12-08 00:11:29,752 - INFO - ✅ OrderDetails.csv sauvegardé (2155 lignes)
+2025-12-08 00:11:29,754 - INFO - ✅ Products.csv sauvegardé (77 lignes)
+2025-12-08 00:11:29,755 - INFO - ✅ Shippers.csv sauvegardé (3 lignes)
+2025-12-08 00:11:29,758 - INFO - ✅ Suppliers.csv sauvegardé (29 lignes)
+2025-12-08 00:11:29,760 - INFO - ✅ Region.csv sauvegardé (4 lignes)
+2025-12-08 00:11:29,762 - INFO - ✅ Territories.csv sauvegardé (53 lignes)
+2025-12-08 00:11:29,782 - INFO - ✅ Fact_Sales.csv sauvegardé (2155 lignes)
+2025-12-08 00:11:29,784 - INFO - ✅ Dim_Customers.csv sauvegardé (91 lignes)
+2025-12-08 00:11:29,786 - INFO - ✅ Dim_Products.csv sauvegardé (77 lignes)
+2025-12-08 00:11:29,800 - INFO - ✅ Dim_Employees.csv sauvegardé (9 lignes)
+2025-12-08 00:11:29,803 - INFO - ✅ Dim_Time.csv sauvegardé (480 lignes)
+2025-12-08 00:11:29,804 - INFO - ✅ Sales_By_Month.csv sauvegardé (23 lignes)
+2025-12-08 00:11:29,805 - INFO - ✅ Sales_By_Category.csv sauvegardé (8 lignes)
+2025-12-08 00:11:29,807 - INFO - ✅ Sales_By_Country.csv sauvegardé (21 lignes)
+2025-12-08 00:11:29,808 - INFO - ✅ Top_Products.csv sauvegardé (10 lignes)
+2025-12-08 00:11:32,093 - INFO - ✅ Fichier Excel consolidé sauvegardé: ../data/northwind_data.xlsx
+2025-12-08 00:11:32,093 - INFO - ==================================================
+2025-12-08 00:11:32,093 - INFO - ETL TERMINÉ AVEC SUCCÈS
+2025-12-08 00:11:32,094 - INFO - ==================================================
+2025-12-08 00:11:32,106 - INFO - Connexion fermée
+2025-12-08 00:55:49,161 - INFO - ✅ Connexion à SQL Server établie avec succès
+2025-12-08 00:55:49,162 - INFO - ==================================================
+2025-12-08 00:55:49,162 - INFO - DÉBUT DE L'EXTRACTION
+2025-12-08 00:55:49,162 - INFO - ==================================================
+2025-12-08 00:55:49,176 - INFO - ✅ Table '[Categories]' extraite: 8 lignes
+2025-12-08 00:55:49,185 - INFO - ✅ Table '[Customers]' extraite: 91 lignes
+2025-12-08 00:55:49,199 - INFO - ✅ Table '[Employees]' extraite: 9 lignes
+2025-12-08 00:55:49,222 - INFO - ✅ Table '[Orders]' extraite: 830 lignes
+2025-12-08 00:55:49,244 - INFO - ✅ Table '[Order Details]' extraite: 2155 lignes
+2025-12-08 00:55:49,254 - INFO - ✅ Table '[Products]' extraite: 77 lignes
+2025-12-08 00:55:49,258 - INFO - ✅ Table '[Shippers]' extraite: 3 lignes
+2025-12-08 00:55:49,266 - INFO - ✅ Table '[Suppliers]' extraite: 29 lignes
+2025-12-08 00:55:49,272 - INFO - ✅ Table '[Region]' extraite: 4 lignes
+2025-12-08 00:55:49,277 - INFO - ✅ Table '[Territories]' extraite: 53 lignes
+2025-12-08 00:55:49,278 - INFO - ✅ Extraction terminée: 10 tables
+2025-12-08 00:55:49,278 - INFO - ==================================================
+2025-12-08 00:55:49,278 - INFO - DÉBUT DES TRANSFORMATIONS
+2025-12-08 00:55:49,279 - INFO - ==================================================
+2025-12-08 00:55:49,279 - INFO - Création de Fact_Sales...
+2025-12-08 00:55:49,296 - INFO - ✅ Fact_Sales créée: 2155 lignes
+2025-12-08 00:55:49,297 - INFO - Création de Dim_Customers...
+2025-12-08 00:55:49,301 - INFO - ✅ Dim_Customers créée: 91 lignes
+2025-12-08 00:55:49,302 - INFO - Création de Dim_Products...
+2025-12-08 00:55:49,311 - INFO - ✅ Dim_Products créée: 77 lignes
+2025-12-08 00:55:49,312 - INFO - Création de Dim_Employees...
+2025-12-08 00:55:49,318 - INFO - ✅ Dim_Employees créée: 9 lignes
+2025-12-08 00:55:49,319 - INFO - Création de Dim_Time...
+2025-12-08 00:55:49,323 - INFO - ✅ Dim_Time créée: 480 lignes
+2025-12-08 00:55:49,324 - INFO - Création des résumés de ventes...
+2025-12-08 00:55:49,357 - INFO - ✅ Résumés de ventes créés
+2025-12-08 00:55:49,358 - INFO - ✅ Transformations terminées
+2025-12-08 00:55:49,359 - INFO - ==================================================
+2025-12-08 00:55:49,359 - INFO - DÉBUT DU CHARGEMENT
+2025-12-08 00:55:49,360 - INFO - ==================================================
+2025-12-08 00:55:49,377 - INFO - ✅ Categories.csv sauvegardé (8 lignes)
+2025-12-08 00:55:49,380 - INFO - ✅ Customers.csv sauvegardé (91 lignes)
+2025-12-08 00:55:49,408 - INFO - ✅ Employees.csv sauvegardé (9 lignes)
+2025-12-08 00:55:49,424 - INFO - ✅ Orders.csv sauvegardé (830 lignes)
+2025-12-08 00:55:49,437 - INFO - ✅ OrderDetails.csv sauvegardé (2155 lignes)
+2025-12-08 00:55:49,440 - INFO - ✅ Products.csv sauvegardé (77 lignes)
+2025-12-08 00:55:49,442 - INFO - ✅ Shippers.csv sauvegardé (3 lignes)
+2025-12-08 00:55:49,445 - INFO - ✅ Suppliers.csv sauvegardé (29 lignes)
+2025-12-08 00:55:49,447 - INFO - ✅ Region.csv sauvegardé (4 lignes)
+2025-12-08 00:55:49,452 - INFO - ✅ Territories.csv sauvegardé (53 lignes)
+2025-12-08 00:55:49,485 - INFO - ✅ Fact_Sales.csv sauvegardé (2155 lignes)
+2025-12-08 00:55:49,488 - INFO - ✅ Dim_Customers.csv sauvegardé (91 lignes)
+2025-12-08 00:55:49,490 - INFO - ✅ Dim_Products.csv sauvegardé (77 lignes)
+2025-12-08 00:55:49,509 - INFO - ✅ Dim_Employees.csv sauvegardé (9 lignes)
+2025-12-08 00:55:49,513 - INFO - ✅ Dim_Time.csv sauvegardé (480 lignes)
+2025-12-08 00:55:49,518 - INFO - ✅ Sales_By_Month.csv sauvegardé (23 lignes)
+2025-12-08 00:55:49,520 - INFO - ✅ Sales_By_Category.csv sauvegardé (8 lignes)
+2025-12-08 00:55:49,522 - INFO - ✅ Sales_By_Country.csv sauvegardé (21 lignes)
+2025-12-08 00:55:49,524 - INFO - ✅ Top_Products.csv sauvegardé (10 lignes)
+2025-12-08 00:55:52,882 - INFO - ✅ Fichier Excel consolidé sauvegardé: ../data/northwind_data.xlsx
+2025-12-08 00:55:52,882 - INFO - ==================================================
+2025-12-08 00:55:52,883 - INFO - ETL TERMINÉ AVEC SUCCÈS
+2025-12-08 00:55:52,884 - INFO - ==================================================
+2025-12-08 00:55:52,885 - INFO - Connexion fermée
+2025-12-08 00:56:46,668 - INFO - ✅ Connexion à SQL Server établie avec succès
+2025-12-08 00:56:46,668 - INFO - ==================================================
+2025-12-08 00:56:46,669 - INFO - DÉBUT DE L'EXTRACTION
+2025-12-08 00:56:46,670 - INFO - ==================================================
+2025-12-08 00:56:46,691 - INFO - ✅ Table '[Categories]' extraite: 8 lignes
+2025-12-08 00:56:46,701 - INFO - ✅ Table '[Customers]' extraite: 91 lignes
+2025-12-08 00:56:46,709 - INFO - ✅ Table '[Employees]' extraite: 9 lignes
+2025-12-08 00:56:46,733 - INFO - ✅ Table '[Orders]' extraite: 830 lignes
+2025-12-08 00:56:46,754 - INFO - ✅ Table '[Order Details]' extraite: 2155 lignes
+2025-12-08 00:56:46,761 - INFO - ✅ Table '[Products]' extraite: 77 lignes
+2025-12-08 00:56:46,766 - INFO - ✅ Table '[Shippers]' extraite: 3 lignes
+2025-12-08 00:56:46,771 - INFO - ✅ Table '[Suppliers]' extraite: 29 lignes
+2025-12-08 00:56:46,775 - INFO - ✅ Table '[Region]' extraite: 4 lignes
+2025-12-08 00:56:46,782 - INFO - ✅ Table '[Territories]' extraite: 53 lignes
+2025-12-08 00:56:46,782 - INFO - ✅ Extraction terminée: 10 tables
+2025-12-08 00:56:46,783 - INFO - ==================================================
+2025-12-08 00:56:46,783 - INFO - DÉBUT DES TRANSFORMATIONS
+2025-12-08 00:56:46,783 - INFO - ==================================================
+2025-12-08 00:56:46,783 - INFO - Création de Fact_Sales...
+2025-12-08 00:56:46,798 - INFO - ✅ Fact_Sales créée: 2155 lignes
+2025-12-08 00:56:46,799 - INFO - Création de Dim_Customers...
+2025-12-08 00:56:46,801 - INFO - ✅ Dim_Customers créée: 91 lignes
+2025-12-08 00:56:46,801 - INFO - Création de Dim_Products...
+2025-12-08 00:56:46,806 - INFO - ✅ Dim_Products créée: 77 lignes
+2025-12-08 00:56:46,806 - INFO - Création de Dim_Employees...
+2025-12-08 00:56:46,809 - INFO - ✅ Dim_Employees créée: 9 lignes
+2025-12-08 00:56:46,809 - INFO - Création de Dim_Time...
+2025-12-08 00:56:46,814 - INFO - ✅ Dim_Time créée: 480 lignes
+2025-12-08 00:56:46,815 - INFO - Création des résumés de ventes...
+2025-12-08 00:56:46,836 - INFO - ✅ Résumés de ventes créés
+2025-12-08 00:56:46,837 - INFO - ✅ Transformations terminées
+2025-12-08 00:56:46,837 - INFO - ==================================================
+2025-12-08 00:56:46,837 - INFO - DÉBUT DU CHARGEMENT
+2025-12-08 00:56:46,838 - INFO - ==================================================
+2025-12-08 00:56:46,847 - INFO - ✅ Categories.csv sauvegardé (8 lignes)
+2025-12-08 00:56:46,850 - INFO - ✅ Customers.csv sauvegardé (91 lignes)
+2025-12-08 00:56:46,871 - INFO - ✅ Employees.csv sauvegardé (9 lignes)
+2025-12-08 00:56:46,883 - INFO - ✅ Orders.csv sauvegardé (830 lignes)
+2025-12-08 00:56:46,891 - INFO - ✅ OrderDetails.csv sauvegardé (2155 lignes)
+2025-12-08 00:56:46,893 - INFO - ✅ Products.csv sauvegardé (77 lignes)
+2025-12-08 00:56:46,895 - INFO - ✅ Shippers.csv sauvegardé (3 lignes)
+2025-12-08 00:56:46,898 - INFO - ✅ Suppliers.csv sauvegardé (29 lignes)
+2025-12-08 00:56:46,900 - INFO - ✅ Region.csv sauvegardé (4 lignes)
+2025-12-08 00:56:46,901 - INFO - ✅ Territories.csv sauvegardé (53 lignes)
+2025-12-08 00:56:46,944 - INFO - ✅ Fact_Sales.csv sauvegardé (2155 lignes)
+2025-12-08 00:56:46,948 - INFO - ✅ Dim_Customers.csv sauvegardé (91 lignes)
+2025-12-08 00:56:46,952 - INFO - ✅ Dim_Products.csv sauvegardé (77 lignes)
+2025-12-08 00:56:46,995 - INFO - ✅ Dim_Employees.csv sauvegardé (9 lignes)
+2025-12-08 00:56:47,004 - INFO - ✅ Dim_Time.csv sauvegardé (480 lignes)
+2025-12-08 00:56:47,007 - INFO - ✅ Sales_By_Month.csv sauvegardé (23 lignes)
+2025-12-08 00:56:47,011 - INFO - ✅ Sales_By_Category.csv sauvegardé (8 lignes)
+2025-12-08 00:56:47,015 - INFO - ✅ Sales_By_Country.csv sauvegardé (21 lignes)
+2025-12-08 00:56:47,019 - INFO - ✅ Top_Products.csv sauvegardé (10 lignes)
+2025-12-08 00:56:50,309 - INFO - ✅ Fichier Excel consolidé sauvegardé: ../data/northwind_data.xlsx
+2025-12-08 00:56:50,309 - INFO - ==================================================
+2025-12-08 00:56:50,310 - INFO - ETL TERMINÉ AVEC SUCCÈS
+2025-12-08 00:56:50,310 - INFO - ==================================================
+2025-12-08 00:56:50,312 - INFO - Connexion fermée
+2025-12-08 00:59:00,202 - INFO - ✅ Connexion à SQL Server établie avec succès
+2025-12-08 00:59:00,202 - INFO - ==================================================
+2025-12-08 00:59:00,203 - INFO - DÉBUT DE L'EXTRACTION
+2025-12-08 00:59:00,203 - INFO - ==================================================
+2025-12-08 00:59:00,223 - INFO - ✅ Table '[Categories]' extraite: 8 lignes
+2025-12-08 00:59:00,235 - INFO - ✅ Table '[Customers]' extraite: 91 lignes
+2025-12-08 00:59:00,251 - INFO - ✅ Table '[Employees]' extraite: 9 lignes
+2025-12-08 00:59:00,289 - INFO - ✅ Table '[Orders]' extraite: 830 lignes
+2025-12-08 00:59:00,329 - INFO - ✅ Table '[Order Details]' extraite: 2155 lignes
+2025-12-08 00:59:00,339 - INFO - ✅ Table '[Products]' extraite: 77 lignes
+2025-12-08 00:59:00,345 - INFO - ✅ Table '[Shippers]' extraite: 3 lignes
+2025-12-08 00:59:00,354 - INFO - ✅ Table '[Suppliers]' extraite: 29 lignes
+2025-12-08 00:59:00,359 - INFO - ✅ Table '[Region]' extraite: 4 lignes
+2025-12-08 00:59:00,367 - INFO - ✅ Table '[Territories]' extraite: 53 lignes
+2025-12-08 00:59:00,368 - INFO - ✅ Extraction terminée: 10 tables
+2025-12-08 00:59:00,369 - INFO - ==================================================
+2025-12-08 00:59:00,369 - INFO - DÉBUT DES TRANSFORMATIONS
+2025-12-08 00:59:00,370 - INFO - ==================================================
+2025-12-08 00:59:00,370 - INFO - Création de Fact_Sales...
+2025-12-08 00:59:00,396 - INFO - ✅ Fact_Sales créée: 2155 lignes
+2025-12-08 00:59:00,397 - INFO - Création de Dim_Customers...
+2025-12-08 00:59:00,402 - INFO - ✅ Dim_Customers créée: 91 lignes
+2025-12-08 00:59:00,403 - INFO - Création de Dim_Products...
+2025-12-08 00:59:00,417 - INFO - ✅ Dim_Products créée: 77 lignes
+2025-12-08 00:59:00,418 - INFO - Création de Dim_Employees...
+2025-12-08 00:59:00,423 - INFO - ✅ Dim_Employees créée: 9 lignes
+2025-12-08 00:59:00,423 - INFO - Création de Dim_Time...
+2025-12-08 00:59:00,433 - INFO - ✅ Dim_Time créée: 480 lignes
+2025-12-08 00:59:00,434 - INFO - Création des résumés de ventes...
+2025-12-08 00:59:00,468 - INFO - ✅ Résumés de ventes créés
+2025-12-08 00:59:00,469 - INFO - ✅ Transformations terminées
+2025-12-08 00:59:00,469 - INFO - ==================================================
+2025-12-08 00:59:00,470 - INFO - DÉBUT DU CHARGEMENT
+2025-12-08 00:59:00,470 - INFO - ==================================================
+2025-12-08 00:59:00,497 - INFO - ✅ Categories.csv sauvegardé (8 lignes)
+2025-12-08 00:59:00,501 - INFO - ✅ Customers.csv sauvegardé (91 lignes)
+2025-12-08 00:59:00,536 - INFO - ✅ Employees.csv sauvegardé (9 lignes)
+2025-12-08 00:59:00,552 - INFO - ✅ Orders.csv sauvegardé (830 lignes)
+2025-12-08 00:59:00,567 - INFO - ✅ OrderDetails.csv sauvegardé (2155 lignes)
+2025-12-08 00:59:00,571 - INFO - ✅ Products.csv sauvegardé (77 lignes)
+2025-12-08 00:59:00,574 - INFO - ✅ Shippers.csv sauvegardé (3 lignes)
+2025-12-08 00:59:00,577 - INFO - ✅ Suppliers.csv sauvegardé (29 lignes)
+2025-12-08 00:59:00,580 - INFO - ✅ Region.csv sauvegardé (4 lignes)
+2025-12-08 00:59:00,584 - INFO - ✅ Territories.csv sauvegardé (53 lignes)
+2025-12-08 00:59:00,620 - INFO - ✅ Fact_Sales.csv sauvegardé (2155 lignes)
+2025-12-08 00:59:00,623 - INFO - ✅ Dim_Customers.csv sauvegardé (91 lignes)
+2025-12-08 00:59:00,625 - INFO - ✅ Dim_Products.csv sauvegardé (77 lignes)
+2025-12-08 00:59:00,659 - INFO - ✅ Dim_Employees.csv sauvegardé (9 lignes)
+2025-12-08 00:59:00,664 - INFO - ✅ Dim_Time.csv sauvegardé (480 lignes)
+2025-12-08 00:59:00,666 - INFO - ✅ Sales_By_Month.csv sauvegardé (23 lignes)
+2025-12-08 00:59:00,668 - INFO - ✅ Sales_By_Category.csv sauvegardé (8 lignes)
+2025-12-08 00:59:00,669 - INFO - ✅ Sales_By_Country.csv sauvegardé (21 lignes)
+2025-12-08 00:59:00,671 - INFO - ✅ Top_Products.csv sauvegardé (10 lignes)
+2025-12-08 00:59:00,671 - ERROR - ❌ Erreur lors du chargement: 'NorthwindETL' object has no attribute 'Fact_Sales'
+2025-12-08 01:06:34,783 - INFO - ✅ Connexion à SQL Server établie avec succès
+2025-12-08 01:06:34,784 - INFO - ==================================================
+2025-12-08 01:06:34,784 - INFO - DÉBUT DE L'EXTRACTION
+2025-12-08 01:06:34,785 - INFO - ==================================================
+2025-12-08 01:06:34,845 - INFO - ✅ Table '[Categories]' extraite: 8 lignes
+2025-12-08 01:06:34,858 - INFO - ✅ Table '[Customers]' extraite: 91 lignes
+2025-12-08 01:06:34,878 - INFO - ✅ Table '[Employees]' extraite: 9 lignes
+2025-12-08 01:06:34,919 - INFO - ✅ Table '[Orders]' extraite: 830 lignes
+2025-12-08 01:06:34,957 - INFO - ✅ Table '[Order Details]' extraite: 2155 lignes
+2025-12-08 01:06:34,967 - INFO - ✅ Table '[Products]' extraite: 77 lignes
+2025-12-08 01:06:34,976 - INFO - ✅ Table '[Shippers]' extraite: 3 lignes
+2025-12-08 01:06:34,986 - INFO - ✅ Table '[Suppliers]' extraite: 29 lignes
+2025-12-08 01:06:34,992 - INFO - ✅ Table '[Region]' extraite: 4 lignes
+2025-12-08 01:06:35,000 - INFO - ✅ Table '[Territories]' extraite: 53 lignes
+2025-12-08 01:06:35,000 - INFO - ✅ Extraction terminée: 10 tables
+2025-12-08 01:06:35,001 - INFO - ==================================================
+2025-12-08 01:06:35,001 - INFO - DÉBUT DES TRANSFORMATIONS
+2025-12-08 01:06:35,002 - INFO - ==================================================
+2025-12-08 01:06:35,002 - INFO - Création de Fact_Sales...
+2025-12-08 01:06:35,033 - INFO - ✅ Fact_Sales créée: 2155 lignes
+2025-12-08 01:06:35,034 - INFO - Création de Dim_Customers...
+2025-12-08 01:06:35,043 - INFO - ✅ Dim_Customers créée: 91 lignes
+2025-12-08 01:06:35,043 - INFO - Création de Dim_Products...
+2025-12-08 01:06:35,062 - INFO - ✅ Dim_Products créée: 77 lignes
+2025-12-08 01:06:35,063 - INFO - Création de Dim_Employees...
+2025-12-08 01:06:35,073 - INFO - ✅ Dim_Employees créée: 9 lignes
+2025-12-08 01:06:35,074 - INFO - Création de Dim_Time...
+2025-12-08 01:06:35,084 - INFO - ✅ Dim_Time créée: 480 lignes
+2025-12-08 01:06:35,084 - INFO - Création des résumés de ventes...
+2025-12-08 01:06:35,127 - INFO - ✅ Résumés de ventes créés
+2025-12-08 01:06:35,128 - INFO - ✅ Transformations terminées
+2025-12-08 01:06:35,128 - INFO - ==================================================
+2025-12-08 01:06:35,128 - INFO - DÉBUT DU CHARGEMENT
+2025-12-08 01:06:35,129 - INFO - ==================================================
+2025-12-08 01:06:35,161 - INFO - ✅ Categories.csv sauvegardé (8 lignes)
+2025-12-08 01:06:35,178 - INFO - ✅ Customers.csv sauvegardé (91 lignes)
+2025-12-08 01:06:35,248 - INFO - ✅ Employees.csv sauvegardé (9 lignes)
+2025-12-08 01:06:35,257 - INFO - ✅ Orders.csv sauvegardé (830 lignes)
+2025-12-08 01:06:35,265 - INFO - ✅ OrderDetails.csv sauvegardé (2155 lignes)
+2025-12-08 01:06:35,267 - INFO - ✅ Products.csv sauvegardé (77 lignes)
+2025-12-08 01:06:35,271 - INFO - ✅ Shippers.csv sauvegardé (3 lignes)
+2025-12-08 01:06:35,273 - INFO - ✅ Suppliers.csv sauvegardé (29 lignes)
+2025-12-08 01:06:35,275 - INFO - ✅ Region.csv sauvegardé (4 lignes)
+2025-12-08 01:06:35,278 - INFO - ✅ Territories.csv sauvegardé (53 lignes)
+2025-12-08 01:06:35,312 - INFO - ✅ Fact_Sales.csv sauvegardé (2155 lignes)
+2025-12-08 01:06:35,317 - INFO - ✅ Dim_Customers.csv sauvegardé (91 lignes)
+2025-12-08 01:06:35,323 - INFO - ✅ Dim_Products.csv sauvegardé (77 lignes)
+2025-12-08 01:06:35,366 - INFO - ✅ Dim_Employees.csv sauvegardé (9 lignes)
+2025-12-08 01:06:35,374 - INFO - ✅ Dim_Time.csv sauvegardé (480 lignes)
+2025-12-08 01:06:35,377 - INFO - ✅ Sales_By_Month.csv sauvegardé (23 lignes)
+2025-12-08 01:06:35,379 - INFO - ✅ Sales_By_Category.csv sauvegardé (8 lignes)
+2025-12-08 01:06:35,382 - INFO - ✅ Sales_By_Country.csv sauvegardé (21 lignes)
+2025-12-08 01:06:35,390 - INFO - ✅ Top_Products.csv sauvegardé (10 lignes)
+2025-12-08 01:06:35,390 - ERROR - ❌ Erreur lors du chargement: 'NorthwindETL' object has no attribute 'Fact_Sales'
+2025-12-08 09:51:15,485 - ERROR - ❌ Erreur de connexion: ('08001', "[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Erreur lors de la localisation de Server/Instance spécifié [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez si le nom de l'instance est correct et si SQL Server est configuré pour autoriser les connexions distantes. Pour plus d'informations, consultez la documentation en ligne de SQL Server. (-1)")
+2025-12-10 21:42:22,964 - INFO - ✅ Connexion à SQL Server établie avec succès
+2025-12-10 21:42:22,965 - INFO - ==================================================
+2025-12-10 21:42:22,966 - INFO - DÉBUT DE L'EXTRACTION
+2025-12-10 21:42:22,966 - INFO - ==================================================
+2025-12-10 21:42:23,386 - INFO - ✅ Table '[Categories]' extraite: 8 lignes
+2025-12-10 21:42:23,414 - INFO - ✅ Table '[Customers]' extraite: 91 lignes
+2025-12-10 21:42:23,469 - INFO - ✅ Table '[Employees]' extraite: 9 lignes
+2025-12-10 21:42:23,542 - INFO - ✅ Table '[Orders]' extraite: 830 lignes
+2025-12-10 21:42:23,610 - INFO - ✅ Table '[Order Details]' extraite: 2155 lignes
+2025-12-10 21:42:23,631 - INFO - ✅ Table '[Products]' extraite: 77 lignes
+2025-12-10 21:42:23,642 - INFO - ✅ Table '[Shippers]' extraite: 3 lignes
+2025-12-10 21:42:23,658 - INFO - ✅ Table '[Suppliers]' extraite: 29 lignes
+2025-12-10 21:42:23,675 - INFO - ✅ Table '[Region]' extraite: 4 lignes
+2025-12-10 21:42:23,691 - INFO - ✅ Table '[Territories]' extraite: 53 lignes
+2025-12-10 21:42:23,692 - INFO - ✅ Extraction terminée: 10 tables
+2025-12-10 21:42:23,692 - INFO - ==================================================
+2025-12-10 21:42:23,693 - INFO - DÉBUT DES TRANSFORMATIONS
+2025-12-10 21:42:23,698 - INFO - ==================================================
+2025-12-10 21:42:23,700 - INFO - Création de Fact_Sales...
+2025-12-10 21:42:23,787 - INFO - ✅ Fact_Sales créée: 2155 lignes
+2025-12-10 21:42:23,788 - INFO - Création de Dim_Customers...
+2025-12-10 21:42:23,798 - INFO - ✅ Dim_Customers créée: 91 lignes
+2025-12-10 21:42:23,799 - INFO - Création de Dim_Products...
+2025-12-10 21:42:23,834 - INFO - ✅ Dim_Products créée: 77 lignes
+2025-12-10 21:42:23,835 - INFO - Création de Dim_Employees...
+2025-12-10 21:42:23,848 - INFO - ✅ Dim_Employees créée: 9 lignes
+2025-12-10 21:42:23,849 - INFO - Création de Dim_Time...
+2025-12-10 21:42:23,869 - INFO - ✅ Dim_Time créée: 480 lignes
+2025-12-10 21:42:23,870 - INFO - Création des résumés de ventes...
+2025-12-10 21:42:23,982 - INFO - ✅ Résumés de ventes créés
+2025-12-10 21:42:23,983 - INFO - ✅ Transformations terminées
+2025-12-10 21:42:23,984 - INFO - ==================================================
+2025-12-10 21:42:23,985 - INFO - DÉBUT DU CHARGEMENT
+2025-12-10 21:42:23,985 - INFO - ==================================================
+2025-12-10 21:42:24,018 - INFO - ✅ Categories.csv sauvegardé (8 lignes)
+2025-12-10 21:42:24,030 - INFO - ✅ Customers.csv sauvegardé (91 lignes)
+2025-12-10 21:42:24,089 - INFO - ✅ Employees.csv sauvegardé (9 lignes)
+2025-12-10 21:42:24,124 - INFO - ✅ Orders.csv sauvegardé (830 lignes)
+2025-12-10 21:42:24,150 - INFO - ✅ OrderDetails.csv sauvegardé (2155 lignes)
+2025-12-10 21:42:24,158 - INFO - ✅ Products.csv sauvegardé (77 lignes)
+2025-12-10 21:42:24,165 - INFO - ✅ Shippers.csv sauvegardé (3 lignes)
+2025-12-10 21:42:24,172 - INFO - ✅ Suppliers.csv sauvegardé (29 lignes)
+2025-12-10 21:42:24,189 - INFO - ✅ Region.csv sauvegardé (4 lignes)
+2025-12-10 21:42:24,199 - INFO - ✅ Territories.csv sauvegardé (53 lignes)
+2025-12-10 21:42:24,311 - INFO - ✅ Fact_Sales.csv sauvegardé (2155 lignes)
+2025-12-10 21:42:24,321 - INFO - ✅ Dim_Customers.csv sauvegardé (91 lignes)
+2025-12-10 21:42:24,334 - INFO - ✅ Dim_Products.csv sauvegardé (77 lignes)
+2025-12-10 21:42:24,404 - INFO - ✅ Dim_Employees.csv sauvegardé (9 lignes)
+2025-12-10 21:42:24,418 - INFO - ✅ Dim_Time.csv sauvegardé (480 lignes)
+2025-12-10 21:42:24,424 - INFO - ✅ Sales_By_Month.csv sauvegardé (23 lignes)
+2025-12-10 21:42:24,438 - INFO - ✅ Sales_By_Category.csv sauvegardé (8 lignes)
+2025-12-10 21:42:24,444 - INFO - ✅ Sales_By_Country.csv sauvegardé (21 lignes)
+2025-12-10 21:42:24,453 - INFO - ✅ Top_Products.csv sauvegardé (10 lignes)
+2025-12-10 21:42:24,454 - ERROR - ❌ Erreur lors du chargement: 'NorthwindETL' object has no attribute 'Fact_Sales'
+2025-12-10 23:02:47,685 - INFO - ✅ Connexion à SQL Server établie avec succès
+2025-12-10 23:02:47,687 - INFO - ==================================================
+2025-12-10 23:02:47,687 - INFO - DÉBUT DE L'EXTRACTION
+2025-12-10 23:02:47,687 - INFO - ==================================================
+2025-12-10 23:02:47,727 - INFO - ✅ Table '[Categories]' extraite: 8 lignes
+2025-12-10 23:02:47,738 - INFO - ✅ Table '[Customers]' extraite: 91 lignes
+2025-12-10 23:02:47,755 - INFO - ✅ Table '[Employees]' extraite: 9 lignes
+2025-12-10 23:02:47,772 - INFO - ✅ Table '[Orders]' extraite: 830 lignes
+2025-12-10 23:02:47,788 - INFO - ✅ Table '[Order Details]' extraite: 2155 lignes
+2025-12-10 23:02:47,797 - INFO - ✅ Table '[Products]' extraite: 77 lignes
+2025-12-10 23:02:47,801 - INFO - ✅ Table '[Shippers]' extraite: 3 lignes
+2025-12-10 23:02:47,806 - INFO - ✅ Table '[Suppliers]' extraite: 29 lignes
+2025-12-10 23:02:47,813 - INFO - ✅ Table '[Region]' extraite: 4 lignes
+2025-12-10 23:02:47,817 - INFO - ✅ Table '[Territories]' extraite: 53 lignes
+2025-12-10 23:02:47,817 - INFO - ✅ Extraction terminée: 10 tables
+2025-12-10 23:02:47,817 - INFO - ==================================================
+2025-12-10 23:02:47,818 - INFO - DÉBUT DES TRANSFORMATIONS
+2025-12-10 23:02:47,818 - INFO - ==================================================
+2025-12-10 23:02:47,818 - INFO - Création de Fact_Sales...
+2025-12-10 23:02:47,847 - INFO - ✅ Fact_Sales créée: 2155 lignes
+2025-12-10 23:02:47,847 - INFO - Création de Dim_Customers...
+2025-12-10 23:02:47,849 - INFO - ✅ Dim_Customers créée: 91 lignes
+2025-12-10 23:02:47,849 - INFO - Création de Dim_Products...
+2025-12-10 23:02:47,858 - INFO - ✅ Dim_Products créée: 77 lignes
+2025-12-10 23:02:47,858 - INFO - Création de Dim_Employees...
+2025-12-10 23:02:47,864 - INFO - ✅ Dim_Employees créée: 9 lignes
+2025-12-10 23:02:47,864 - INFO - Création de Dim_Time...
+2025-12-10 23:02:47,871 - INFO - ✅ Dim_Time créée: 480 lignes
+2025-12-10 23:02:47,871 - INFO - Création des résumés de ventes...
+2025-12-10 23:02:47,902 - INFO - ✅ Résumés de ventes créés
+2025-12-10 23:02:47,903 - INFO - ✅ Transformations terminées
+2025-12-10 23:02:47,903 - INFO - ==================================================
+2025-12-10 23:02:47,903 - INFO - DÉBUT DU CHARGEMENT
+2025-12-10 23:02:47,904 - INFO - ==================================================
+2025-12-10 23:02:47,912 - INFO - ✅ Categories.csv sauvegardé (8 lignes)
+2025-12-10 23:02:47,915 - INFO - ✅ Customers.csv sauvegardé (91 lignes)
+2025-12-10 23:02:47,933 - INFO - ✅ Employees.csv sauvegardé (9 lignes)
+2025-12-10 23:02:47,940 - INFO - ✅ Orders.csv sauvegardé (830 lignes)
+2025-12-10 23:02:47,950 - INFO - ✅ OrderDetails.csv sauvegardé (2155 lignes)
+2025-12-10 23:02:47,952 - INFO - ✅ Products.csv sauvegardé (77 lignes)
+2025-12-10 23:02:47,954 - INFO - ✅ Shippers.csv sauvegardé (3 lignes)
+2025-12-10 23:02:47,958 - INFO - ✅ Suppliers.csv sauvegardé (29 lignes)
+2025-12-10 23:02:47,963 - INFO - ✅ Region.csv sauvegardé (4 lignes)
+2025-12-10 23:02:47,967 - INFO - ✅ Territories.csv sauvegardé (53 lignes)
+2025-12-10 23:02:47,990 - INFO - ✅ Fact_Sales.csv sauvegardé (2155 lignes)
+2025-12-10 23:02:47,998 - INFO - ✅ Dim_Customers.csv sauvegardé (91 lignes)
+2025-12-10 23:02:48,002 - INFO - ✅ Dim_Products.csv sauvegardé (77 lignes)
+2025-12-10 23:02:48,031 - INFO - ✅ Dim_Employees.csv sauvegardé (9 lignes)
+2025-12-10 23:02:48,035 - INFO - ✅ Dim_Time.csv sauvegardé (480 lignes)
+2025-12-10 23:02:48,036 - INFO - ✅ Sales_By_Month.csv sauvegardé (23 lignes)
+2025-12-10 23:02:48,037 - INFO - ✅ Sales_By_Category.csv sauvegardé (8 lignes)
+2025-12-10 23:02:48,039 - INFO - ✅ Sales_By_Country.csv sauvegardé (21 lignes)
+2025-12-10 23:02:48,040 - INFO - ✅ Top_Products.csv sauvegardé (10 lignes)
+2025-12-10 23:02:48,040 - ERROR - ❌ Erreur lors du chargement: 'NorthwindETL' object has no attribute 'Fact_Sales'
+2025-12-17 00:21:44,682 - INFO - ✅ Connexion à SQL Server établie avec succès
+2025-12-17 00:21:44,683 - INFO - ==================================================
+2025-12-17 00:21:44,684 - INFO - DÉBUT DE L'EXTRACTION
+2025-12-17 00:21:44,685 - INFO - ==================================================
+2025-12-17 00:21:45,013 - INFO - ✅ Table '[Categories]' extraite: 8 lignes
+2025-12-17 00:21:45,032 - INFO - ✅ Table '[Customers]' extraite: 91 lignes
+2025-12-17 00:21:45,076 - INFO - ✅ Table '[Employees]' extraite: 9 lignes
+2025-12-17 00:21:45,113 - INFO - ✅ Table '[Orders]' extraite: 830 lignes
+2025-12-17 00:21:45,141 - INFO - ✅ Table '[Order Details]' extraite: 2155 lignes
+2025-12-17 00:21:45,152 - INFO - ✅ Table '[Products]' extraite: 77 lignes
+2025-12-17 00:21:45,159 - INFO - ✅ Table '[Shippers]' extraite: 3 lignes
+2025-12-17 00:21:45,167 - INFO - ✅ Table '[Suppliers]' extraite: 29 lignes
+2025-12-17 00:21:45,179 - INFO - ✅ Table '[Region]' extraite: 4 lignes
+2025-12-17 00:21:45,187 - INFO - ✅ Table '[Territories]' extraite: 53 lignes
+2025-12-17 00:21:45,187 - INFO - ✅ Extraction terminée: 10 tables
+2025-12-17 00:21:45,188 - INFO - ==================================================
+2025-12-17 00:21:45,188 - INFO - DÉBUT DES TRANSFORMATIONS
+2025-12-17 00:21:45,189 - INFO - ==================================================
+2025-12-17 00:21:45,189 - INFO - Création de Fact_Sales...
+2025-12-17 00:21:45,259 - INFO - ✅ Fact_Sales créée: 2155 lignes
+2025-12-17 00:21:45,259 - INFO - Création de Dim_Customers...
+2025-12-17 00:21:45,263 - INFO - ✅ Dim_Customers créée: 91 lignes
+2025-12-17 00:21:45,263 - INFO - Création de Dim_Products...
+2025-12-17 00:21:45,281 - INFO - ✅ Dim_Products créée: 77 lignes
+2025-12-17 00:21:45,282 - INFO - Création de Dim_Employees...
+2025-12-17 00:21:45,291 - INFO - ✅ Dim_Employees créée: 9 lignes
+2025-12-17 00:21:45,291 - INFO - Création de Dim_Time...
+2025-12-17 00:21:45,301 - INFO - ✅ Dim_Time créée: 480 lignes
+2025-12-17 00:21:45,302 - INFO - Création des résumés de ventes...
+2025-12-17 00:21:45,342 - INFO - ✅ Résumés de ventes créés
+2025-12-17 00:21:45,342 - INFO - ✅ Transformations terminées
+2025-12-17 00:21:45,343 - INFO - ==================================================
+2025-12-17 00:21:45,343 - INFO - DÉBUT DU CHARGEMENT
+2025-12-17 00:21:45,343 - INFO - ==================================================
+2025-12-17 00:21:45,357 - INFO - ✅ Categories.csv sauvegardé (8 lignes)
+2025-12-17 00:21:45,360 - INFO - ✅ Customers.csv sauvegardé (91 lignes)
+2025-12-17 00:21:45,380 - INFO - ✅ Employees.csv sauvegardé (9 lignes)
+2025-12-17 00:21:45,391 - INFO - ✅ Orders.csv sauvegardé (830 lignes)
+2025-12-17 00:21:45,399 - INFO - ✅ OrderDetails.csv sauvegardé (2155 lignes)
+2025-12-17 00:21:45,403 - INFO - ✅ Products.csv sauvegardé (77 lignes)
+2025-12-17 00:21:45,406 - INFO - ✅ Shippers.csv sauvegardé (3 lignes)
+2025-12-17 00:21:45,409 - INFO - ✅ Suppliers.csv sauvegardé (29 lignes)
+2025-12-17 00:21:45,412 - INFO - ✅ Region.csv sauvegardé (4 lignes)
+2025-12-17 00:21:45,415 - INFO - ✅ Territories.csv sauvegardé (53 lignes)
+2025-12-17 00:21:45,444 - INFO - ✅ Fact_Sales.csv sauvegardé (2155 lignes)
+2025-12-17 00:21:45,448 - INFO - ✅ Dim_Customers.csv sauvegardé (91 lignes)
+2025-12-17 00:21:45,451 - INFO - ✅ Dim_Products.csv sauvegardé (77 lignes)
+2025-12-17 00:21:45,471 - INFO - ✅ Dim_Employees.csv sauvegardé (9 lignes)
+2025-12-17 00:21:45,476 - INFO - ✅ Dim_Time.csv sauvegardé (480 lignes)
+2025-12-17 00:21:45,479 - INFO - ✅ Sales_By_Month.csv sauvegardé (23 lignes)
+2025-12-17 00:21:45,481 - INFO - ✅ Sales_By_Category.csv sauvegardé (8 lignes)
+2025-12-17 00:21:45,483 - INFO - ✅ Sales_By_Country.csv sauvegardé (21 lignes)
+2025-12-17 00:21:45,484 - INFO - ✅ Top_Products.csv sauvegardé (10 lignes)
+2025-12-17 00:21:45,485 - ERROR - ❌ Erreur lors du chargement: 'NorthwindETL' object has no attribute 'Fact_Sales'
+2025-12-17 14:03:00,157 - ERROR - ❌ Erreur de connexion: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (-1)')
+2025-12-17 14:04:41,644 - INFO - ✅ Connexion à SQL Server établie avec succès
+2025-12-17 14:04:41,645 - INFO - ==================================================
+2025-12-17 14:04:41,646 - INFO - DÉBUT DE L'EXTRACTION
+2025-12-17 14:04:41,646 - INFO - ==================================================
+2025-12-17 14:04:41,700 - INFO - ✅ Table '[Categories]' extraite: 8 lignes
+2025-12-17 14:04:41,712 - INFO - ✅ Table '[Customers]' extraite: 91 lignes
+2025-12-17 14:04:41,728 - INFO - ✅ Table '[Employees]' extraite: 9 lignes
+2025-12-17 14:04:41,767 - INFO - ✅ Table '[Orders]' extraite: 830 lignes
+2025-12-17 14:04:41,813 - INFO - ✅ Table '[Order Details]' extraite: 2155 lignes
+2025-12-17 14:04:41,825 - INFO - ✅ Table '[Products]' extraite: 77 lignes
+2025-12-17 14:04:41,832 - INFO - ✅ Table '[Shippers]' extraite: 3 lignes
+2025-12-17 14:04:41,842 - INFO - ✅ Table '[Suppliers]' extraite: 29 lignes
+2025-12-17 14:04:41,850 - INFO - ✅ Table '[Region]' extraite: 4 lignes
+2025-12-17 14:04:41,860 - INFO - ✅ Table '[Territories]' extraite: 53 lignes
+2025-12-17 14:04:41,860 - INFO - ✅ Extraction terminée: 10 tables
+2025-12-17 14:04:41,861 - INFO - ==================================================
+2025-12-17 14:04:41,862 - INFO - DÉBUT DES TRANSFORMATIONS
+2025-12-17 14:04:41,862 - INFO - ==================================================
+2025-12-17 14:04:41,863 - INFO - Création de Fact_Sales...
+2025-12-17 14:04:41,913 - INFO - ✅ Fact_Sales créée: 2155 lignes
+2025-12-17 14:04:41,914 - INFO - Création de Dim_Customers...
+2025-12-17 14:04:41,917 - INFO - ✅ Dim_Customers créée: 91 lignes
+2025-12-17 14:04:41,918 - INFO - Création de Dim_Products...
+2025-12-17 14:04:41,934 - INFO - ✅ Dim_Products créée: 77 lignes
+2025-12-17 14:04:41,934 - INFO - Création de Dim_Employees...
+2025-12-17 14:04:41,940 - INFO - ✅ Dim_Employees créée: 9 lignes
+2025-12-17 14:04:41,941 - INFO - Création de Dim_Time...
+2025-12-17 14:04:41,949 - INFO - ✅ Dim_Time créée: 480 lignes
+2025-12-17 14:04:41,950 - INFO - Création des résumés de ventes...
+2025-12-17 14:04:41,997 - INFO - ✅ Résumés de ventes créés
+2025-12-17 14:04:41,998 - INFO - ✅ Transformations terminées
+2025-12-17 14:04:41,998 - INFO - ==================================================
+2025-12-17 14:04:41,998 - INFO - DÉBUT DU CHARGEMENT
+2025-12-17 14:04:41,999 - INFO - ==================================================
+2025-12-17 14:04:42,069 - INFO - ✅ Categories.csv sauvegardé (8 lignes)
+2025-12-17 14:04:42,074 - INFO - ✅ Customers.csv sauvegardé (91 lignes)
+2025-12-17 14:04:42,175 - INFO - ✅ Employees.csv sauvegardé (9 lignes)
+2025-12-17 14:04:42,218 - INFO - ✅ Orders.csv sauvegardé (830 lignes)
+2025-12-17 14:04:42,239 - INFO - ✅ OrderDetails.csv sauvegardé (2155 lignes)
+2025-12-17 14:04:42,245 - INFO - ✅ Products.csv sauvegardé (77 lignes)
+2025-12-17 14:04:42,251 - INFO - ✅ Shippers.csv sauvegardé (3 lignes)
+2025-12-17 14:04:42,258 - INFO - ✅ Suppliers.csv sauvegardé (29 lignes)
+2025-12-17 14:04:42,261 - INFO - ✅ Region.csv sauvegardé (4 lignes)
+2025-12-17 14:04:42,263 - INFO - ✅ Territories.csv sauvegardé (53 lignes)
+2025-12-17 14:04:42,292 - INFO - ✅ Fact_Sales.csv sauvegardé (2155 lignes)
+2025-12-17 14:04:42,294 - INFO - ✅ Dim_Customers.csv sauvegardé (91 lignes)
+2025-12-17 14:04:42,296 - INFO - ✅ Dim_Products.csv sauvegardé (77 lignes)
+2025-12-17 14:04:42,327 - INFO - ✅ Dim_Employees.csv sauvegardé (9 lignes)
+2025-12-17 14:04:42,332 - INFO - ✅ Dim_Time.csv sauvegardé (480 lignes)
+2025-12-17 14:04:42,333 - INFO - ✅ Sales_By_Month.csv sauvegardé (23 lignes)
+2025-12-17 14:04:42,335 - INFO - ✅ Sales_By_Category.csv sauvegardé (8 lignes)
+2025-12-17 14:04:42,338 - INFO - ✅ Sales_By_Country.csv sauvegardé (21 lignes)
+2025-12-17 14:04:42,341 - INFO - ✅ Top_Products.csv sauvegardé (10 lignes)
+2025-12-17 14:04:42,341 - ERROR - ❌ Erreur lors du chargement: 'NorthwindETL' object has no attribute 'Fact_Sales'
+2025-12-17 16:45:57,311 - ERROR - ❌ Erreur de connexion: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF].  (-1) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (-1)')
+2025-12-17 16:46:13,797 - INFO - ✅ Connexion à SQL Server établie avec succès
+2025-12-17 16:46:13,798 - INFO - ==================================================
+2025-12-17 16:46:13,798 - INFO - DÉBUT DE L'EXTRACTION
+2025-12-17 16:46:13,799 - INFO - ==================================================
+2025-12-17 16:46:13,825 - INFO - ✅ Table '[Categories]' extraite: 8 lignes
+2025-12-17 16:46:13,831 - INFO - ✅ Table '[Customers]' extraite: 91 lignes
+2025-12-17 16:46:13,842 - INFO - ✅ Table '[Employees]' extraite: 9 lignes
+2025-12-17 16:46:13,860 - INFO - ✅ Table '[Orders]' extraite: 830 lignes
+2025-12-17 16:46:13,886 - INFO - ✅ Table '[Order Details]' extraite: 2155 lignes
+2025-12-17 16:46:13,893 - INFO - ✅ Table '[Products]' extraite: 77 lignes
+2025-12-17 16:46:13,897 - INFO - ✅ Table '[Shippers]' extraite: 3 lignes
+2025-12-17 16:46:13,904 - INFO - ✅ Table '[Suppliers]' extraite: 29 lignes
+2025-12-17 16:46:13,908 - INFO - ✅ Table '[Region]' extraite: 4 lignes
+2025-12-17 16:46:13,912 - INFO - ✅ Table '[Territories]' extraite: 53 lignes
+2025-12-17 16:46:13,913 - INFO - ✅ Extraction terminée: 10 tables
+2025-12-17 16:46:13,913 - INFO - ==================================================
+2025-12-17 16:46:13,913 - INFO - DÉBUT DES TRANSFORMATIONS
+2025-12-17 16:46:13,913 - INFO - ==================================================
+2025-12-17 16:46:13,914 - INFO - Création de Fact_Sales...
+2025-12-17 16:46:13,928 - INFO - ✅ Fact_Sales créée: 2155 lignes
+2025-12-17 16:46:13,928 - INFO - Création de Dim_Customers...
+2025-12-17 16:46:13,930 - INFO - ✅ Dim_Customers créée: 91 lignes
+2025-12-17 16:46:13,931 - INFO - Création de Dim_Products...
+2025-12-17 16:46:13,939 - INFO - ✅ Dim_Products créée: 77 lignes
+2025-12-17 16:46:13,940 - INFO - Création de Dim_Employees...
+2025-12-17 16:46:13,942 - INFO - ✅ Dim_Employees créée: 9 lignes
+2025-12-17 16:46:13,943 - INFO - Création de Dim_Time...
+2025-12-17 16:46:13,947 - INFO - ✅ Dim_Time créée: 480 lignes
+2025-12-17 16:46:13,948 - INFO - Création des résumés de ventes...
+2025-12-17 16:46:13,973 - INFO - ✅ Résumés de ventes créés
+2025-12-17 16:46:13,973 - INFO - ✅ Transformations terminées
+2025-12-17 16:46:13,974 - INFO - ==================================================
+2025-12-17 16:46:13,974 - INFO - DÉBUT DU CHARGEMENT
+2025-12-17 16:46:13,974 - INFO - ==================================================
+2025-12-17 16:46:13,984 - INFO - ✅ Categories.csv sauvegardé (8 lignes)
+2025-12-17 16:46:13,986 - INFO - ✅ Customers.csv sauvegardé (91 lignes)
+2025-12-17 16:46:14,006 - INFO - ✅ Employees.csv sauvegardé (9 lignes)
+2025-12-17 16:46:14,017 - INFO - ✅ Orders.csv sauvegardé (830 lignes)
+2025-12-17 16:46:14,025 - INFO - ✅ OrderDetails.csv sauvegardé (2155 lignes)
+2025-12-17 16:46:14,027 - INFO - ✅ Products.csv sauvegardé (77 lignes)
+2025-12-17 16:46:14,029 - INFO - ✅ Shippers.csv sauvegardé (3 lignes)
+2025-12-17 16:46:14,031 - INFO - ✅ Suppliers.csv sauvegardé (29 lignes)
+2025-12-17 16:46:14,033 - INFO - ✅ Region.csv sauvegardé (4 lignes)
+2025-12-17 16:46:14,035 - INFO - ✅ Territories.csv sauvegardé (53 lignes)
+2025-12-17 16:46:14,068 - INFO - ✅ Fact_Sales.csv sauvegardé (2155 lignes)
+2025-12-17 16:46:14,071 - INFO - ✅ Dim_Customers.csv sauvegardé (91 lignes)
+2025-12-17 16:46:14,074 - INFO - ✅ Dim_Products.csv sauvegardé (77 lignes)
+2025-12-17 16:46:14,097 - INFO - ✅ Dim_Employees.csv sauvegardé (9 lignes)
+2025-12-17 16:46:14,102 - INFO - ✅ Dim_Time.csv sauvegardé (480 lignes)
+2025-12-17 16:46:14,104 - INFO - ✅ Sales_By_Month.csv sauvegardé (23 lignes)
+2025-12-17 16:46:14,106 - INFO - ✅ Sales_By_Category.csv sauvegardé (8 lignes)
+2025-12-17 16:46:14,108 - INFO - ✅ Sales_By_Country.csv sauvegardé (21 lignes)
+2025-12-17 16:46:14,109 - INFO - ✅ Top_Products.csv sauvegardé (10 lignes)
+2025-12-17 16:46:14,109 - INFO - ==================================================
+2025-12-17 16:46:14,109 - INFO - ETL TERMINÉ AVEC SUCCÈS
+2025-12-17 16:46:14,109 - INFO - ==================================================
+2025-12-17 16:46:14,110 - INFO - 📁 Données sauvegardées dans: D:\Projet_Bi\data
+2025-12-17 16:46:14,111 - INFO - ✅ Connexion fermée
+2025-12-17 22:33:55,654 - INFO - ✅ Connexion à SQL Server établie avec succès
+2025-12-17 22:33:55,654 - INFO - ==================================================
+2025-12-17 22:33:55,654 - INFO - DÉBUT DE L'EXTRACTION
+2025-12-17 22:33:55,655 - INFO - ==================================================
+2025-12-17 22:33:55,675 - INFO - ✅ Table '[Categories]' extraite: 8 lignes
+2025-12-17 22:33:55,679 - INFO - ✅ Table '[Customers]' extraite: 91 lignes
+2025-12-17 22:33:55,688 - INFO - ✅ Table '[Employees]' extraite: 9 lignes
+2025-12-17 22:33:55,701 - INFO - ✅ Table '[Orders]' extraite: 830 lignes
+2025-12-17 22:33:55,714 - INFO - ✅ Table '[Order Details]' extraite: 2155 lignes
+2025-12-17 22:33:55,718 - INFO - ✅ Table '[Products]' extraite: 77 lignes
+2025-12-17 22:33:55,722 - INFO - ✅ Table '[Shippers]' extraite: 3 lignes
+2025-12-17 22:33:55,727 - INFO - ✅ Table '[Suppliers]' extraite: 29 lignes
+2025-12-17 22:33:55,738 - INFO - ✅ Table '[Region]' extraite: 4 lignes
+2025-12-17 22:33:55,741 - INFO - ✅ Table '[Territories]' extraite: 53 lignes
+2025-12-17 22:33:55,741 - INFO - ✅ Extraction terminée: 10 tables
+2025-12-17 22:33:55,741 - INFO - ==================================================
+2025-12-17 22:33:55,741 - INFO - DÉBUT DES TRANSFORMATIONS
+2025-12-17 22:33:55,741 - INFO - ==================================================
+2025-12-17 22:33:55,741 - INFO - Création de Fact_Sales...
+2025-12-17 22:33:55,756 - INFO - ✅ Fact_Sales créée: 2155 lignes
+2025-12-17 22:33:55,757 - INFO - Création de Dim_Customers...
+2025-12-17 22:33:55,758 - INFO - ✅ Dim_Customers créée: 91 lignes
+2025-12-17 22:33:55,758 - INFO - Création de Dim_Products...
+2025-12-17 22:33:55,765 - INFO - ✅ Dim_Products créée: 77 lignes
+2025-12-17 22:33:55,766 - INFO - Création de Dim_Employees...
+2025-12-17 22:33:55,768 - INFO - ✅ Dim_Employees créée: 9 lignes
+2025-12-17 22:33:55,768 - INFO - Création de Dim_Time...
+2025-12-17 22:33:55,772 - INFO - ✅ Dim_Time créée: 480 lignes
+2025-12-17 22:33:55,772 - INFO - Création des résumés de ventes...
+2025-12-17 22:33:55,786 - INFO - ✅ Résumés de ventes créés
+2025-12-17 22:33:55,787 - INFO - ✅ Transformations terminées
+2025-12-17 22:33:55,787 - INFO - ==================================================
+2025-12-17 22:33:55,787 - INFO - DÉBUT DU CHARGEMENT
+2025-12-17 22:33:55,787 - INFO - ==================================================
+2025-12-17 22:33:55,793 - INFO - ✅ Categories.csv sauvegardé (8 lignes)
+2025-12-17 22:33:55,794 - INFO - ✅ Customers.csv sauvegardé (91 lignes)
+2025-12-17 22:33:55,806 - INFO - ✅ Employees.csv sauvegardé (9 lignes)
+2025-12-17 22:33:55,811 - INFO - ✅ Orders.csv sauvegardé (830 lignes)
+2025-12-17 22:33:55,817 - INFO - ✅ OrderDetails.csv sauvegardé (2155 lignes)
+2025-12-17 22:33:55,818 - INFO - ✅ Products.csv sauvegardé (77 lignes)
+2025-12-17 22:33:55,819 - INFO - ✅ Shippers.csv sauvegardé (3 lignes)
+2025-12-17 22:33:55,820 - INFO - ✅ Suppliers.csv sauvegardé (29 lignes)
+2025-12-17 22:33:55,821 - INFO - ✅ Region.csv sauvegardé (4 lignes)
+2025-12-17 22:33:55,822 - INFO - ✅ Territories.csv sauvegardé (53 lignes)
+2025-12-17 22:33:55,840 - INFO - ✅ Fact_Sales.csv sauvegardé (2155 lignes)
+2025-12-17 22:33:55,841 - INFO - ✅ Dim_Customers.csv sauvegardé (91 lignes)
+2025-12-17 22:33:55,844 - INFO - ✅ Dim_Products.csv sauvegardé (77 lignes)
+2025-12-17 22:33:55,855 - INFO - ✅ Dim_Employees.csv sauvegardé (9 lignes)
+2025-12-17 22:33:55,857 - INFO - ✅ Dim_Time.csv sauvegardé (480 lignes)
+2025-12-17 22:33:55,858 - INFO - ✅ Sales_By_Month.csv sauvegardé (23 lignes)
+2025-12-17 22:33:55,860 - INFO - ✅ Sales_By_Category.csv sauvegardé (8 lignes)
+2025-12-17 22:33:55,861 - INFO - ✅ Sales_By_Country.csv sauvegardé (21 lignes)
+2025-12-17 22:33:55,862 - INFO - ✅ Top_Products.csv sauvegardé (10 lignes)
+2025-12-17 22:33:55,862 - INFO - ==================================================
+2025-12-17 22:33:55,862 - INFO - ETL TERMINÉ AVEC SUCCÈS
+2025-12-17 22:33:55,863 - INFO - ==================================================
+2025-12-17 22:33:55,863 - INFO - 📁 Données sauvegardées dans: D:\Projet_Bi\data
+2025-12-17 22:33:55,865 - INFO - ✅ Connexion fermée
+2025-12-17 22:34:25,821 - INFO - ✅ Connexion à SQL Server établie avec succès
+2025-12-17 22:34:25,821 - INFO - ==================================================
+2025-12-17 22:34:25,822 - INFO - DÉBUT DE L'EXTRACTION
+2025-12-17 22:34:25,822 - INFO - ==================================================
+2025-12-17 22:34:25,833 - INFO - ✅ Table '[Categories]' extraite: 8 lignes
+2025-12-17 22:34:25,837 - INFO - ✅ Table '[Customers]' extraite: 91 lignes
+2025-12-17 22:34:25,844 - INFO - ✅ Table '[Employees]' extraite: 9 lignes
+2025-12-17 22:34:25,856 - INFO - ✅ Table '[Orders]' extraite: 830 lignes
+2025-12-17 22:34:25,869 - INFO - ✅ Table '[Order Details]' extraite: 2155 lignes
+2025-12-17 22:34:25,874 - INFO - ✅ Table '[Products]' extraite: 77 lignes
+2025-12-17 22:34:25,877 - INFO - ✅ Table '[Shippers]' extraite: 3 lignes
+2025-12-17 22:34:25,881 - INFO - ✅ Table '[Suppliers]' extraite: 29 lignes
+2025-12-17 22:34:25,885 - INFO - ✅ Table '[Region]' extraite: 4 lignes
+2025-12-17 22:34:25,888 - INFO - ✅ Table '[Territories]' extraite: 53 lignes
+2025-12-17 22:34:25,888 - INFO - ✅ Extraction terminée: 10 tables
+2025-12-17 22:34:25,888 - INFO - ==================================================
+2025-12-17 22:34:25,888 - INFO - DÉBUT DES TRANSFORMATIONS
+2025-12-17 22:34:25,889 - INFO - ==================================================
+2025-12-17 22:34:25,889 - INFO - Création de Fact_Sales...
+2025-12-17 22:34:25,897 - INFO - ✅ Fact_Sales créée: 2155 lignes
+2025-12-17 22:34:25,898 - INFO - Création de Dim_Customers...
+2025-12-17 22:34:25,899 - INFO - ✅ Dim_Customers créée: 91 lignes
+2025-12-17 22:34:25,899 - INFO - Création de Dim_Products...
+2025-12-17 22:34:25,903 - INFO - ✅ Dim_Products créée: 77 lignes
+2025-12-17 22:34:25,903 - INFO - Création de Dim_Employees...
+2025-12-17 22:34:25,905 - INFO - ✅ Dim_Employees créée: 9 lignes
+2025-12-17 22:34:25,905 - INFO - Création de Dim_Time...
+2025-12-17 22:34:25,908 - INFO - ✅ Dim_Time créée: 480 lignes
+2025-12-17 22:34:25,909 - INFO - Création des résumés de ventes...
+2025-12-17 22:34:25,922 - INFO - ✅ Résumés de ventes créés
+2025-12-17 22:34:25,922 - INFO - ✅ Transformations terminées
+2025-12-17 22:34:25,922 - INFO - ==================================================
+2025-12-17 22:34:25,922 - INFO - DÉBUT DU CHARGEMENT
+2025-12-17 22:34:25,923 - INFO - ==================================================
+2025-12-17 22:34:25,928 - INFO - ✅ Categories.csv sauvegardé (8 lignes)
+2025-12-17 22:34:25,930 - INFO - ✅ Customers.csv sauvegardé (91 lignes)
+2025-12-17 22:34:25,944 - INFO - ✅ Employees.csv sauvegardé (9 lignes)
+2025-12-17 22:34:25,951 - INFO - ✅ Orders.csv sauvegardé (830 lignes)
+2025-12-17 22:34:25,957 - INFO - ✅ OrderDetails.csv sauvegardé (2155 lignes)
+2025-12-17 22:34:25,958 - INFO - ✅ Products.csv sauvegardé (77 lignes)
+2025-12-17 22:34:25,960 - INFO - ✅ Shippers.csv sauvegardé (3 lignes)
+2025-12-17 22:34:25,961 - INFO - ✅ Suppliers.csv sauvegardé (29 lignes)
+2025-12-17 22:34:25,963 - INFO - ✅ Region.csv sauvegardé (4 lignes)
+2025-12-17 22:34:25,965 - INFO - ✅ Territories.csv sauvegardé (53 lignes)
+2025-12-17 22:34:25,984 - INFO - ✅ Fact_Sales.csv sauvegardé (2155 lignes)
+2025-12-17 22:34:25,986 - INFO - ✅ Dim_Customers.csv sauvegardé (91 lignes)
+2025-12-17 22:34:25,988 - INFO - ✅ Dim_Products.csv sauvegardé (77 lignes)
+2025-12-17 22:34:26,002 - INFO - ✅ Dim_Employees.csv sauvegardé (9 lignes)
+2025-12-17 22:34:26,005 - INFO - ✅ Dim_Time.csv sauvegardé (480 lignes)
+2025-12-17 22:34:26,006 - INFO - ✅ Sales_By_Month.csv sauvegardé (23 lignes)
+2025-12-17 22:34:26,007 - INFO - ✅ Sales_By_Category.csv sauvegardé (8 lignes)
+2025-12-17 22:34:26,008 - INFO - ✅ Sales_By_Country.csv sauvegardé (21 lignes)
+2025-12-17 22:34:26,009 - INFO - ✅ Top_Products.csv sauvegardé (10 lignes)
+2025-12-17 22:34:26,009 - INFO - ==================================================
+2025-12-17 22:34:26,009 - INFO - ETL TERMINÉ AVEC SUCCÈS
+2025-12-17 22:34:26,009 - INFO - ==================================================
+2025-12-17 22:34:26,009 - INFO - 📁 Données sauvegardées dans: D:\Projet_Bi\data
+2025-12-17 22:34:26,010 - INFO - ✅ Connexion fermée

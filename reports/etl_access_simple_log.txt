@@ -1,0 +1,110 @@
+2025-12-17 22:15:02,195 - INFO - ✅ Connexion à Access établie: D:\Projet_Bi\data\Northwind 2012.accdb
+2025-12-17 22:15:02,195 - INFO - ==================================================
+2025-12-17 22:15:02,196 - INFO - DÉBUT DE L'EXTRACTION (ACCESS - SIMPLE)
+2025-12-17 22:15:02,196 - INFO - ==================================================
+2025-12-17 22:15:02,197 - INFO - 📋 Tables trouvées (20): Customers, Employee Privileges, Employees, Inventory Transaction Types, Inventory Transactions, Invoices, Order Details, Order Details Status, Orders, Orders Status, Orders Tax Status, Privileges, Products, Purchase Order Details, Purchase Order Status, Purchase Orders, Sales Reports, Shippers, Strings, Suppliers
+2025-12-17 22:15:02,212 - INFO - ✅ Table 'Customers' extraite: 29 lignes, 18 colonnes
+2025-12-17 22:15:02,215 - INFO - ✅ Table 'Employee Privileges' extraite: 1 lignes, 2 colonnes
+2025-12-17 22:15:02,220 - INFO - ✅ Table 'Employees' extraite: 9 lignes, 18 colonnes
+2025-12-17 22:15:02,223 - INFO - ✅ Table 'Inventory Transaction Types' extraite: 4 lignes, 2 colonnes
+2025-12-17 22:15:02,226 - INFO - ✅ Table 'Inventory Transactions' extraite: 102 lignes, 9 colonnes
+2025-12-17 22:15:02,229 - INFO - ✅ Table 'Invoices' extraite: 35 lignes, 7 colonnes
+2025-12-17 22:15:02,232 - INFO - ✅ Table 'Order Details' extraite: 58 lignes, 10 colonnes
+2025-12-17 22:15:02,234 - INFO - ✅ Table 'Order Details Status' extraite: 6 lignes, 2 colonnes
+2025-12-17 22:15:02,239 - INFO - ✅ Table 'Orders' extraite: 48 lignes, 20 colonnes
+2025-12-17 22:15:02,242 - INFO - ✅ Table 'Orders Status' extraite: 4 lignes, 2 colonnes
+2025-12-17 22:15:02,245 - INFO - ✅ Table 'Orders Tax Status' extraite: 2 lignes, 2 colonnes
+2025-12-17 22:15:02,247 - INFO - ✅ Table 'Privileges' extraite: 1 lignes, 2 colonnes
+2025-12-17 22:15:02,262 - INFO - ✅ Table 'Products' extraite: 45 lignes, 14 colonnes
+2025-12-17 22:15:02,265 - INFO - ✅ Table 'Purchase Order Details' extraite: 55 lignes, 8 colonnes
+2025-12-17 22:15:02,267 - INFO - ✅ Table 'Purchase Order Status' extraite: 4 lignes, 2 colonnes
+2025-12-17 22:15:02,270 - INFO - ✅ Table 'Purchase Orders' extraite: 28 lignes, 16 colonnes
+2025-12-17 22:15:02,271 - INFO - ✅ Table 'Sales Reports' extraite: 5 lignes, 5 colonnes
+2025-12-17 22:15:02,274 - INFO - ✅ Table 'Shippers' extraite: 3 lignes, 18 colonnes
+2025-12-17 22:15:02,277 - INFO - ✅ Table 'Strings' extraite: 62 lignes, 2 colonnes
+2025-12-17 22:15:02,281 - INFO - ✅ Table 'Suppliers' extraite: 10 lignes, 18 colonnes
+2025-12-17 22:15:02,282 - INFO - ✅ Extraction terminée: 20 tables
+2025-12-17 22:15:02,282 - INFO - ==================================================
+2025-12-17 22:15:02,282 - INFO - DÉBUT DU CHARGEMENT
+2025-12-17 22:15:02,282 - INFO - ==================================================
+2025-12-17 22:15:02,301 - INFO - ✅ access_Customers.csv sauvegardé (29 lignes)
+2025-12-17 22:15:02,302 - INFO - ✅ access_Employee_Privileges.csv sauvegardé (1 lignes)
+2025-12-17 22:15:02,303 - INFO - ✅ access_Employees.csv sauvegardé (9 lignes)
+2025-12-17 22:15:02,304 - INFO - ✅ access_Inventory_Transaction_Types.csv sauvegardé (4 lignes)
+2025-12-17 22:15:02,306 - INFO - ✅ access_Inventory_Transactions.csv sauvegardé (102 lignes)
+2025-12-17 22:15:02,307 - INFO - ✅ access_Invoices.csv sauvegardé (35 lignes)
+2025-12-17 22:15:02,309 - INFO - ✅ access_Order_Details.csv sauvegardé (58 lignes)
+2025-12-17 22:15:02,310 - INFO - ✅ access_Order_Details_Status.csv sauvegardé (6 lignes)
+2025-12-17 22:15:02,312 - INFO - ✅ access_Orders.csv sauvegardé (48 lignes)
+2025-12-17 22:15:02,314 - INFO - ✅ access_Orders_Status.csv sauvegardé (4 lignes)
+2025-12-17 22:15:02,315 - INFO - ✅ access_Orders_Tax_Status.csv sauvegardé (2 lignes)
+2025-12-17 22:15:02,316 - INFO - ✅ access_Privileges.csv sauvegardé (1 lignes)
+2025-12-17 22:15:02,318 - INFO - ✅ access_Products.csv sauvegardé (45 lignes)
+2025-12-17 22:15:02,319 - INFO - ✅ access_Purchase_Order_Details.csv sauvegardé (55 lignes)
+2025-12-17 22:15:02,321 - INFO - ✅ access_Purchase_Order_Status.csv sauvegardé (4 lignes)
+2025-12-17 22:15:02,323 - INFO - ✅ access_Purchase_Orders.csv sauvegardé (28 lignes)
+2025-12-17 22:15:02,324 - INFO - ✅ access_Sales_Reports.csv sauvegardé (5 lignes)
+2025-12-17 22:15:02,325 - INFO - ✅ access_Shippers.csv sauvegardé (3 lignes)
+2025-12-17 22:15:02,327 - INFO - ✅ access_Strings.csv sauvegardé (62 lignes)
+2025-12-17 22:15:02,328 - INFO - ✅ access_Suppliers.csv sauvegardé (10 lignes)
+2025-12-17 22:15:02,328 - INFO - ✅ Total: 20 fichiers sauvegardés
+2025-12-17 22:15:02,328 - INFO - ==================================================
+2025-12-17 22:15:02,328 - INFO - ETL ACCESS TERMINÉ AVEC SUCCÈS
+2025-12-17 22:15:02,328 - INFO - ==================================================
+2025-12-17 22:15:02,329 - INFO - 📁 Données sauvegardées dans: D:\Projet_Bi\data
+2025-12-17 22:15:02,376 - INFO - ✅ Connexion Access fermée
+2025-12-17 22:34:36,251 - INFO - ✅ Connexion à Access établie: D:\Projet_Bi\data\Northwind 2012.accdb
+2025-12-17 22:34:36,252 - INFO - ==================================================
+2025-12-17 22:34:36,252 - INFO - DÉBUT DE L'EXTRACTION (ACCESS - SIMPLE)
+2025-12-17 22:34:36,252 - INFO - ==================================================
+2025-12-17 22:34:36,253 - INFO - 📋 Tables trouvées (20): Customers, Employee Privileges, Employees, Inventory Transaction Types, Inventory Transactions, Invoices, Order Details, Order Details Status, Orders, Orders Status, Orders Tax Status, Privileges, Products, Purchase Order Details, Purchase Order Status, Purchase Orders, Sales Reports, Shippers, Strings, Suppliers
+2025-12-17 22:34:36,268 - INFO - ✅ Table 'Customers' extraite: 29 lignes, 18 colonnes
+2025-12-17 22:34:36,270 - INFO - ✅ Table 'Employee Privileges' extraite: 1 lignes, 2 colonnes
+2025-12-17 22:34:36,274 - INFO - ✅ Table 'Employees' extraite: 9 lignes, 18 colonnes
+2025-12-17 22:34:36,277 - INFO - ✅ Table 'Inventory Transaction Types' extraite: 4 lignes, 2 colonnes
+2025-12-17 22:34:36,280 - INFO - ✅ Table 'Inventory Transactions' extraite: 102 lignes, 9 colonnes
+2025-12-17 22:34:36,282 - INFO - ✅ Table 'Invoices' extraite: 35 lignes, 7 colonnes
+2025-12-17 22:34:36,285 - INFO - ✅ Table 'Order Details' extraite: 58 lignes, 10 colonnes
+2025-12-17 22:34:36,287 - INFO - ✅ Table 'Order Details Status' extraite: 6 lignes, 2 colonnes
+2025-12-17 22:34:36,293 - INFO - ✅ Table 'Orders' extraite: 48 lignes, 20 colonnes
+2025-12-17 22:34:36,295 - INFO - ✅ Table 'Orders Status' extraite: 4 lignes, 2 colonnes
+2025-12-17 22:34:36,297 - INFO - ✅ Table 'Orders Tax Status' extraite: 2 lignes, 2 colonnes
+2025-12-17 22:34:36,299 - INFO - ✅ Table 'Privileges' extraite: 1 lignes, 2 colonnes
+2025-12-17 22:34:36,312 - INFO - ✅ Table 'Products' extraite: 45 lignes, 14 colonnes
+2025-12-17 22:34:36,316 - INFO - ✅ Table 'Purchase Order Details' extraite: 55 lignes, 8 colonnes
+2025-12-17 22:34:36,317 - INFO - ✅ Table 'Purchase Order Status' extraite: 4 lignes, 2 colonnes
+2025-12-17 22:34:36,321 - INFO - ✅ Table 'Purchase Orders' extraite: 28 lignes, 16 colonnes
+2025-12-17 22:34:36,323 - INFO - ✅ Table 'Sales Reports' extraite: 5 lignes, 5 colonnes
+2025-12-17 22:34:36,328 - INFO - ✅ Table 'Shippers' extraite: 3 lignes, 18 colonnes
+2025-12-17 22:34:36,331 - INFO - ✅ Table 'Strings' extraite: 62 lignes, 2 colonnes
+2025-12-17 22:34:36,334 - INFO - ✅ Table 'Suppliers' extraite: 10 lignes, 18 colonnes
+2025-12-17 22:34:36,335 - INFO - ✅ Extraction terminée: 20 tables
+2025-12-17 22:34:36,335 - INFO - ==================================================
+2025-12-17 22:34:36,335 - INFO - DÉBUT DU CHARGEMENT
+2025-12-17 22:34:36,335 - INFO - ==================================================
+2025-12-17 22:34:36,339 - INFO - ✅ access_Customers.csv sauvegardé (29 lignes)
+2025-12-17 22:34:36,340 - INFO - ✅ access_Employee_Privileges.csv sauvegardé (1 lignes)
+2025-12-17 22:34:36,341 - INFO - ✅ access_Employees.csv sauvegardé (9 lignes)
+2025-12-17 22:34:36,342 - INFO - ✅ access_Inventory_Transaction_Types.csv sauvegardé (4 lignes)
+2025-12-17 22:34:36,344 - INFO - ✅ access_Inventory_Transactions.csv sauvegardé (102 lignes)
+2025-12-17 22:34:36,346 - INFO - ✅ access_Invoices.csv sauvegardé (35 lignes)
+2025-12-17 22:34:36,347 - INFO - ✅ access_Order_Details.csv sauvegardé (58 lignes)
+2025-12-17 22:34:36,348 - INFO - ✅ access_Order_Details_Status.csv sauvegardé (6 lignes)
+2025-12-17 22:34:36,350 - INFO - ✅ access_Orders.csv sauvegardé (48 lignes)
+2025-12-17 22:34:36,352 - INFO - ✅ access_Orders_Status.csv sauvegardé (4 lignes)
+2025-12-17 22:34:36,353 - INFO - ✅ access_Orders_Tax_Status.csv sauvegardé (2 lignes)
+2025-12-17 22:34:36,354 - INFO - ✅ access_Privileges.csv sauvegardé (1 lignes)
+2025-12-17 22:34:36,355 - INFO - ✅ access_Products.csv sauvegardé (45 lignes)
+2025-12-17 22:34:36,357 - INFO - ✅ access_Purchase_Order_Details.csv sauvegardé (55 lignes)
+2025-12-17 22:34:36,358 - INFO - ✅ access_Purchase_Order_Status.csv sauvegardé (4 lignes)
+2025-12-17 22:34:36,359 - INFO - ✅ access_Purchase_Orders.csv sauvegardé (28 lignes)
+2025-12-17 22:34:36,361 - INFO - ✅ access_Sales_Reports.csv sauvegardé (5 lignes)
+2025-12-17 22:34:36,363 - INFO - ✅ access_Shippers.csv sauvegardé (3 lignes)
+2025-12-17 22:34:36,364 - INFO - ✅ access_Strings.csv sauvegardé (62 lignes)
+2025-12-17 22:34:36,365 - INFO - ✅ access_Suppliers.csv sauvegardé (10 lignes)
+2025-12-17 22:34:36,365 - INFO - ✅ Total: 20 fichiers sauvegardés
+2025-12-17 22:34:36,365 - INFO - ==================================================
+2025-12-17 22:34:36,365 - INFO - ETL ACCESS TERMINÉ AVEC SUCCÈS
+2025-12-17 22:34:36,365 - INFO - ==================================================
+2025-12-17 22:34:36,366 - INFO - 📁 Données sauvegardées dans: D:\Projet_Bi\data
+2025-12-17 22:34:36,414 - INFO - ✅ Connexion Access fermée

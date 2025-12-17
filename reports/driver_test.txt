@@ -1,0 +1,35 @@
+============================================================
+ODBC DRIVERS DISPONIBLES
+============================================================
+
+Total: 7 drivers
+
+1. SQL Server
+2. ODBC Driver 17 for SQL Server
+3. ODBC Driver 18 for SQL Server
+4. Microsoft Access Driver (*.mdb, *.accdb)
+5. Microsoft Excel Driver (*.xls, *.xlsx, *.xlsm, *.xlsb)
+6. Microsoft Access dBASE Driver (*.dbf, *.ndx, *.mdx)
+7. Microsoft Access Text Driver (*.txt, *.csv)
+
+============================================================
+DRIVERS ACCESS DÉTECTÉS
+============================================================
+✅ Microsoft Access Driver (*.mdb, *.accdb)
+✅ Microsoft Access dBASE Driver (*.dbf, *.ndx, *.mdx)
+✅ Microsoft Access Text Driver (*.txt, *.csv)
+
+============================================================
+TEST DE CONNEXION
+============================================================
+
+Test avec: Microsoft Access Driver (*.mdb, *.accdb)
+✅ CONNEXION RÉUSSIE avec 'Microsoft Access Driver (*.mdb, *.accdb)'
+📋 Tables trouvées (20): Customers, Employee Privileges, Employees, Inventory Transaction Types, Inventory Transactions, Invoices, Order Details, Order Details Status, Orders, Orders Status, Orders Tax Status, Privileges, Products, Purchase Order Details, Purchase Order Status, Purchase Orders, Sales Reports, Shippers, Strings, Suppliers
+
+============================================================
+CONFIGURATION RECOMMANDÉE
+============================================================
+
+Utilisez ce driver dans config.py:
+'driver': '{Microsoft Access Driver (*.mdb, *.accdb)}'

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northwind BI Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>🔧 Control Panel</h2>
+        </div>
+
+        <div class="sidebar-content">
+            <!-- Date Range Filter -->
+            <div class="filter-section">
+                <h3>📅 Date Range</h3>
+                <div class="date-inputs">
+                    <div class="input-group">
+                        <label>From:</label>
+                        <input type="date" id="startDate" class="date-input">
+                    </div>
+                    <div class="input-group">
+                        <label>To:</label>
+                        <input type="date" id="endDate" class="date-input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Country Filter -->
+            <div class="filter-section">
+                <h3>🌍 Countries</h3>
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="allCountries" checked>
+                        <span>Select All Countries</span>
+                    </label>
+                </div>
+                <div id="countryList" class="checkbox-list" style="display: none;"></div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Category Filter -->
+            <div class="filter-section">
+                <h3>📦 Categories</h3>
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="allCategories" checked>
+                        <span>Select All Categories</span>
+                    </label>
+                </div>
+                <div id="categoryList" class="checkbox-list" style="display: none;"></div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Refresh Button -->
+            <button id="refreshBtn" class="refresh-btn">🔄 Refresh Data</button>
+
+            <div class="info-box">
+                💡 Data is cached for better performance. Click Refresh to update.
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <h1 class="header-title"> Northwind Business Intelligence </h1>
+                <p class="header-subtitle" id="dateRange">Loading...</p>
+                <p class="header-subtitle" style="font-size: 0.9em; color: #9aa0a6;">🔄 Combining SQL Server + Access
+                    Database</p>
+            </div>
+            <div class="header-right">
+                <div class="metric-small">
+                    <div class="metric-label">📈 Filtered Records</div>
+                    <div class="metric-value" id="filteredRecords">0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- KPIs Section -->
+        <div class="section">
+            <h2 class="section-title">📈 Key Performance Indicators (KPIs)</h2>
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-icon">💰</div>
+                    <div class="kpi-content">
+                        <div class="kpi-label">Total Revenue</div>
+                        <div class="kpi-value" id="totalRevenue">$0.00</div>
+                        <div class="kpi-delta" id="revenueDelta"></div>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon">📦</div>
+                    <div class="kpi-content">
+                        <div class="kpi-label">Total Orders</div>
+                        <div class="kpi-value" id="totalOrders">0</div>
+                        <div class="kpi-delta" id="ordersDelta"></div>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon">💵</div>
+                    <div class="kpi-content">
+                        <div class="kpi-label">Avg Order Value</div>
+                        <div class="kpi-value" id="avgOrderValue">$0.00</div>
+                        <div class="kpi-delta" id="avgDelta"></div>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon">👥</div>
+                    <div class="kpi-content">
+                        <div class="kpi-label">Customers</div>
+                        <div class="kpi-value" id="totalCustomers">0</div>
+                        <div class="kpi-delta" id="customersDelta"></div>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon">📊</div>
+                    <div class="kpi-content">
+                        <div class="kpi-label">Avg Items/Order</div>
+                        <div class="kpi-value" id="avgItems">0.0</div>
+                        <div class="kpi-delta" id="itemsDelta"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Sales Analysis Section -->
+        <div class="section">
+            <h2 class="section-title">📊 Sales Analysis</h2>
+            <div class="chart-grid">
+                <div class="chart-card">
+                    <h3 class="chart-title">💹 Sales Trend</h3>
+                    <div id="salesTrendChart" class="chart"></div>
+                </div>
+                <div class="chart-card">
+                    <h3 class="chart-title">🌍 Top 10 Countries by Revenue</h3>
+                    <div id="countriesChart" class="chart"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Product Analysis Section -->
+        <div class="section">
+            <h2 class="section-title">📦 Product Analysis</h2>
+            <div class="chart-grid">
+                <div class="chart-card">
+                    <h3 class="chart-title">🏆 Top 10 Products by Revenue</h3>
+                    <div id="productsChart" class="chart"></div>
+                </div>
+                <div class="chart-card">
+                    <h3 class="chart-title">📂 Revenue Distribution by Category</h3>
+                    <div id="categoryChart" class="chart"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Customer Analysis Section -->
+        <div class="section">
+            <h2 class="section-title">👥 Customer Analysis</h2>
+            <div class="chart-grid">
+                <div class="chart-card">
+                    <h3 class="chart-title">💎 Top 10 Customers by Revenue</h3>
+                    <div id="customersChart" class="chart"></div>
+                </div>
+                <div class="chart-card">
+                    <h3 class="chart-title">📈 Monthly Order Trend</h3>
+                    <div id="monthlyChart" class="chart"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- 3D Visualizations Section -->
+        <div class="section">
+            <h2 class="section-title">🎲 3D Interactive Visualizations</h2>
+            <div class="chart-grid-3d">
+                <div class="chart-card">
+                    <h3 class="chart-title">📊 3D Sales by Country, Category & Time</h3>
+                    <div id="scatter3dChart" class="chart"></div>
+                </div>
+                <div class="chart-card">
+                    <h3 class="chart-title">🌊 3D Revenue Surface (Country × Category)</h3>
+                    <div id="surface3dChart" class="chart"></div>
+                </div>
+            </div>
+            <div class="chart-grid">
+                <div class="chart-card chart-card-wide">
+                    <h3 class="chart-title">📦 3D Product Performance (Revenue × Quantity × Orders)</h3>
+                    <div id="bar3dChart" class="chart"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Data Table Section -->
+        <div class="section">
+            <h2 class="section-title">📋 Data Table</h2>
+            <div class="table-grid">
+                <div class="table-card">
+                    <h3 class="chart-title">Recent Transactions</h3>
+                    <div class="table-container">
+                        <table id="transactionsTable">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Order Date</th>
+                                    <th>Company</th>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Unit Price</th>
+                                    <th>Total Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody id="transactionsBody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <h3 class="chart-title">Summary Statistics</h3>
+                    <div class="stats-container">
+                        <table id="statsTable">
+                            <thead>
+                                <tr>
+                                    <th>Metric</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody id="statsBody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="divider"></div>
+        <div class="footer">
+            <p><strong>📊 Northwind Business Intelligence Dashboard</strong></p>
+            <p>BI Project 2025 | Data ETL via Python | Built with HTML/CSS/JavaScript</p>
+            <p id="lastUpdated">Last Updated: Loading...</p>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
