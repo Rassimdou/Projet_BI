@@ -25,3 +25,25 @@
 2025-12-17 22:12:42,221 - INFO - Création de Fact_Sales...
 2025-12-17 22:12:42,235 - ERROR - ❌ Erreur ETL: 'OrderID'
 2025-12-17 22:12:42,283 - INFO - ✅ Connexion Access fermée
+2025-12-18 13:01:56,130 - INFO - ✅ Connexion à Access établie: D:\Projet_Bi\data\Northwind 2012.accdb
+2025-12-18 13:01:56,131 - INFO - ==================================================
+2025-12-18 13:01:56,132 - INFO - DÉBUT DE L'EXTRACTION (ACCESS)
+2025-12-18 13:01:56,132 - INFO - ==================================================
+2025-12-18 13:01:56,134 - INFO - 📋 Tables trouvées: Customers, Employee Privileges, Employees, Inventory Transaction Types, Inventory Transactions, Invoices, Order Details, Order Details Status, Orders, Orders Status, Orders Tax Status, Privileges, Products, Purchase Order Details, Purchase Order Status, Purchase Orders, Sales Reports, Shippers, Strings, Suppliers
+2025-12-18 13:01:56,134 - WARNING - ⚠️ Table 'Categories' non trouvée dans la base Access
+2025-12-18 13:01:56,183 - INFO - ✅ Table 'Customers' extraite: 29 lignes
+2025-12-18 13:01:56,191 - INFO - ✅ Table 'Employees' extraite: 9 lignes
+2025-12-18 13:01:56,204 - INFO - ✅ Table 'Orders' extraite: 48 lignes
+2025-12-18 13:01:56,210 - INFO - ✅ Table 'Order Details' extraite: 58 lignes
+2025-12-18 13:01:56,240 - INFO - ✅ Table 'Products' extraite: 45 lignes
+2025-12-18 13:01:56,251 - INFO - ✅ Table 'Shippers' extraite: 3 lignes
+2025-12-18 13:01:56,302 - INFO - ✅ Table 'Suppliers' extraite: 10 lignes
+2025-12-18 13:01:56,323 - WARNING - ⚠️ Table 'Region' non trouvée dans la base Access
+2025-12-18 13:01:56,324 - WARNING - ⚠️ Table 'Territories' non trouvée dans la base Access
+2025-12-18 13:01:56,324 - INFO - ✅ Extraction terminée: 7 tables
+2025-12-18 13:01:56,325 - INFO - ==================================================
+2025-12-18 13:01:56,326 - INFO - DÉBUT DES TRANSFORMATIONS
+2025-12-18 13:01:56,327 - INFO - ==================================================
+2025-12-18 13:01:56,327 - INFO - Création de Fact_Sales...
+2025-12-18 13:01:56,332 - ERROR - ❌ Erreur ETL: 'OrderID'
+2025-12-18 13:01:56,416 - INFO - ✅ Connexion Access fermée
